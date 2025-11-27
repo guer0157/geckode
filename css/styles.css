@@ -11205,6 +11205,9 @@ html {
 .page-section {
   padding: 6rem 0;
 }
+.secondary-page {
+  padding-top: 10rem;
+}
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -11240,6 +11243,9 @@ html {
 .divider-custom .divider-custom-icon {
   color: #2c3e50;
   font-size: 2rem;
+}
+.divider-custom-svg {
+  width: 4rem;
 }
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
