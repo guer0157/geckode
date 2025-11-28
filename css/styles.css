@@ -11403,6 +11403,16 @@ html {
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
 }
+@media (max-width: 575.98px) {
+  .portfolio .portfolio-item .portfolio-item-caption {
+    opacity: 1;
+    background-color: transparent;
+    h2 {
+      color: white;
+      text-shadow: 0 4px 5px rgb(0 0 0 / 85%);
+    }
+  }
+}
 .portfolio
   .portfolio-item
   .portfolio-item-caption
