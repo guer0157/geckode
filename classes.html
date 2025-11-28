@@ -194,6 +194,15 @@
         </h2>
       </div>
     </section>
+    <section
+      class="page-section secondary-page bg-light text-black mb-0"
+      id="info"
+    >
+      <div class="container">
+        <div id="eventbrite-widget-container-1976205313290"></div>
+      </div>
+    </section>
+
     <!-- Levels Section-->
     <!-- <section class="page-section bg-primary text-white mb-0" id="levels">
       <div class="container">
@@ -1071,6 +1080,25 @@
         </div>
       </div>
     </div>
+
+    <script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+      var exampleCallback = function () {
+        console.log("Order complete!");
+      };
+
+      window.EBWidgets.createWidget({
+        // Required
+        widgetType: "checkout",
+        eventId: "1976205313290",
+        iframeContainerId: "eventbrite-widget-container-1976205313290",
+
+        // Optional
+        iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback, // Method called when an order has successfully completed
+      });
+    </script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
