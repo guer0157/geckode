@@ -216,7 +216,7 @@
     </section>
     <!-- Mailing list section -->
     <!-- Contact Section-->
-    <section class="page-section" id="contact">
+    <section class="page-section" id="mailing-list">
       <div class="container">
         <h2
           class="page-section-heading text-center text-uppercase text-secondary mb-0"
@@ -238,29 +238,38 @@
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
-                  id="name"
+                  id="nameMailingList"
                   type="text"
                   placeholder="Enter your name..."
                   data-sb-validations="required"
                 />
-                <label for="name">Full name</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">
+                <label for="nameMailingList">Full name</label>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="nameMailingList:required"
+                >
                   A name is required.
                 </div>
               </div>
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
-                  id="email"
+                  id="emailMailingList"
                   type="email"
                   placeholder="name@example.com"
                   data-sb-validations="required,email"
                 />
-                <label for="email">Email address</label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">
+                <label for="emailMailingList">Email address</label>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="emailMailingList:required"
+                >
                   An email is required.
                 </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="emailMailingList:email"
+                >
                   Email is not valid.
                 </div>
               </div>
@@ -281,7 +290,7 @@
               </div>
               <button
                 class="btn btn-primary btn-xl"
-                id="submitButton"
+                id="submitButtonMailingList"
                 type="submit"
               >
                 Send

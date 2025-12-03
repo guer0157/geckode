@@ -1,20 +1,37 @@
 const handleFormEvents = () => {
-  const name = document.getElementById("name");
-  const email = document.getElementById("email");
-  const phone = document.getElementById("phone");
-  const message = document.getElementById("message");
-  const submitButton = document.getElementById("submitButton");
-
-  submitButton.addEventListener("click", async (e) => {
+  const nameContactUs = document.getElementById("nameContactUs");
+  const emailContactUs = document.getElementById("emailContactUs");
+  const phoneContactUs = document.getElementById("phoneContactUs");
+  const messageContactUs = document.getElementById("messageContactUs");
+  const submitButtonContactUs = document.getElementById(
+    "submitButtonContactUs"
+  );
+  const nameMailingList = document.getElementById("nameMailingList");
+  const emailMailingList = document.getElementById("emailMailingList");
+  const submitButtonMailingList = document.getElementById(
+    "submitButtonMailingList"
+  );
+  submitButtonMailingList.addEventListener("click", async (e) => {
     e.preventDefault();
-    await fetch("https://askcharly.ca/api/email/geckodes/contact-list", {
+    await fetch("https://askcharly.ca/api/email/geckodes/mailing-list", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: name.value,
-        email: email.value,
-        phone: phone.value,
-        message: message.value,
+        name: nameMailingList.value,
+        email: emailMailingList.value,
+      }),
+    });
+  });
+  submitButtonContactUs.addEventListener("click", async (e) => {
+    e.preventDefault();
+    await fetch("https://askcharly.ca/api/email/geckodes/contact-us", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: nameContactUs.value,
+        email: emailContactUs.value,
+        phone: phoneContactUs.value,
+        message: messageContactUs.value,
       }),
     });
   });
