@@ -120,6 +120,11 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded" href="/classes.html"
                 >Classes</a
               >
@@ -167,18 +172,20 @@
         <div class="row">
           <div class="col-lg-4 ms-auto">
             <p class="lead">
-              At Geckodes, we focus on building strong computer science
-              fundamentals that help kids understand how technology works. Each
-              level is designed to grow their confidence, creativity, and
-              problem-solving skills step by step.
+              At Geckodes, our focus is on helping kids build strong computer
+              science fundamentals through engaging, age-appropriate activities.
+              Our beginner-friendly course is designed to introduce young
+              learners to the basics of how technology works while strengthening
+              their confidence, creativity, and problem-solving skills.
             </p>
           </div>
           <div class="col-lg-4 me-auto">
             <p class="lead">
-              We currently offer Levels 1, 2, and 3, each introducing
-              age-appropriate coding concepts through fun, hands-on activities.
-              These structured levels give kids a clear learning path as they
-              advance their skills and explore the world of coding.
+              As we continue to grow, we’ll be expanding our program with
+              additional levels for the April–June term. These upcoming levels
+              will build on the beginner course, offering students a clear and
+              enjoyable path to advance their coding skills and deepen their
+              understanding of the world of technology.
             </p>
           </div>
         </div>
@@ -207,18 +214,85 @@
         <div id="eventbrite-widget-container-1976205313290"></div>
       </div>
     </section>
-    <section
-      class="page-section secondary-page bg-light text-black mb-0"
-      id="info"
-    >
+    <!-- Mailing list section -->
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
       <div class="container">
-        <h2 class="page-section-heading text-center text-uppercase text-black">
-          Full Curriculum Coming Soon!
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Join our mailing list for updates!
         </h2>
+        <p class="text-center">
+          Stay informed about our latest classes, events, and special offers by
+          joining our mailing list.
+        </p>
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  data-sb-validations="required"
+                />
+                <label for="name">Full name</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  A name is required.
+                </div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="name@example.com"
+                  data-sb-validations="required,email"
+                />
+                <label for="email">Email address</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  An email is required.
+                </div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">
+                  Email is not valid.
+                </div>
+              </div>
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                  <div class="fw-bolder">Form submission successful!</div>
+                  To activate this form, sign up at
+                  <br />
+                  <a href="https://startbootstrap.com/solution/contact-forms"
+                    >https://startbootstrap.com/solution/contact-forms</a
+                  >
+                </div>
+              </div>
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">
+                  Error sending message!
+                </div>
+              </div>
+              <button
+                class="btn btn-primary btn-xl"
+                id="submitButton"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Levels Section-->
-    <!-- <section class="page-section bg-primary text-white mb-0" id="levels">
+    <section class="page-section bg-primary text-white mb-0" id="levels">
       <div class="container">
         <h2 class="page-section-heading text-center text-uppercase text-black">
           Level 1: Introduction to Computer Science
@@ -385,7 +459,32 @@
                 aria-expanded="false"
                 aria-controls="collapseSeven"
               >
-                Lesson 7: My Loopy Robotic Friends Jr.
+                Lesson 7: Loopy loop goes round and round.
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Students are introduced to loops and sequences with interactive
+                activities and games. They practice detecting patterns and
+                problem solving.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                Lesson 8: My Loopy Robotic Friends Jr.
               </button>
             </h2>
             <div
@@ -409,7 +508,7 @@
                 aria-expanded="false"
                 aria-controls="collapseEight"
               >
-                Lesson 8: Loops with Rey and BB-8
+                Lesson 9: Loops with Rey and BB-8
               </button>
             </h2>
             <div
@@ -434,7 +533,7 @@
                 aria-expanded="false"
                 aria-controls="collapseNine"
               >
-                Lesson 9: Harvesting Crops with Loops
+                Lesson 10: Harvesting Crops with Loops
               </button>
             </h2>
             <div
@@ -459,7 +558,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTen"
               >
-                Lesson 10: Mini-Project: Sticker Art
+                Lesson 11: Mini-Project: Sticker Art
               </button>
             </h2>
             <div
@@ -484,7 +583,32 @@
                 aria-expanded="false"
                 aria-controls="collapseEleven"
               >
-                Lesson 11: The Big Event
+                Lesson 12: The Big Event
+              </button>
+            </h2>
+            <div
+              id="collapseEleven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Students explore event-based programming and break tasks into
+                sequenced instructions. They strengthen logic by modeling how
+                programs respond to actions.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEleven"
+                aria-expanded="false"
+                aria-controls="collapseEleven"
+              >
+                Lesson 13: The Big Event 2
               </button>
             </h2>
             <div
@@ -509,7 +633,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwelve"
               >
-                Lesson 12: Build a Flappy Game
+                Lesson 14: Build a Flappy Game
               </button>
             </h2>
             <div
@@ -534,7 +658,7 @@
                 aria-expanded="false"
                 aria-controls="collapseThirteen"
               >
-                Lesson 13: Mini-Project: Chase Game
+                Lesson 15: Mini-Project: Chase Game
               </button>
             </h2>
             <div
@@ -559,7 +683,7 @@
                 aria-expanded="false"
                 aria-controls="collapseFourteen"
               >
-                Lesson 14: Picturing Data
+                Lesson 16: Picturing Data
               </button>
             </h2>
             <div
@@ -584,7 +708,7 @@
                 aria-expanded="false"
                 aria-controls="collapseFifteen"
               >
-                Lesson 15: Pattern Block Data
+                Lesson 17: Pattern Block Data
               </button>
             </h2>
             <div
@@ -609,7 +733,7 @@
                 aria-expanded="false"
                 aria-controls="collapseSixteen"
               >
-                Lesson 16: Binary Bracelets
+                Lesson 18: Binary Bracelets
               </button>
             </h2>
             <div
@@ -634,7 +758,32 @@
                 aria-expanded="false"
                 aria-controls="collapseSeventeen"
               >
-                Lesson 17: End of Course Project
+                Lesson 19: End of Course Project Beginning
+              </button>
+            </h2>
+            <div
+              id="collapseSeventeen"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Students plan, design, and build a final program using sequences
+                and loops. They document their choices, give attribution, and
+                use software tools to bring their project to life.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeventeen"
+                aria-expanded="false"
+                aria-controls="collapseSeventeen"
+              >
+                Lesson 20: End of Course Project End
               </button>
             </h2>
             <div
@@ -651,7 +800,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- Footer-->
     <footer class="footer text-center">
       <div class="container">
@@ -767,10 +916,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </body>
 </html>
