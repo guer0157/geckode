@@ -7,20 +7,23 @@ const handleFormEvents = () => {
 
   submitButton.addEventListener("click", async (e) => {
     e.preventDefault();
-    console.log("Form Data:", {
-      name: name.value,
-      email: email.value,
-      phone: phone.value,
-      message: message.value,
-    });
+    const allowedOrigin = "https://geckodes.com";
+
+    res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
+    res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+    if (req.method === "OPTIONS") {
+      return res.status(200).end();
+    }
     await fetch("https://askcharly.ca/api/email/geckodes/contact-list", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name,
-        email,
-        phone,
-        message,
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        message: message.value,
       }),
     });
   });
