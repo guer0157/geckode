@@ -256,6 +256,7 @@
                 />
                 <label for="nameMailingList">Full name</label>
                 <div
+                  id="nameErrorMailingList"
                   class="invalid-feedback"
                   data-sb-feedback="nameMailingList:required"
                 >
@@ -272,37 +273,33 @@
                 />
                 <label for="emailMailingList">Email address</label>
                 <div
+                  id="emailErrorMailingList"
                   class="invalid-feedback"
                   data-sb-feedback="emailMailingList:required"
                 >
                   An email is required.
                 </div>
                 <div
+                  id="invalidEmailErrorMailingList"
                   class="invalid-feedback"
                   data-sb-feedback="emailMailingList:email"
                 >
                   Email is not valid.
                 </div>
               </div>
-              <div class="d-none" id="submitSuccessMessage">
+              <div class="d-none" id="submitSuccessMessageMailingList">
                 <div class="text-center mb-3">
-                  <div class="fw-bolder">Form submission successful!</div>
-                  To activate this form, sign up at
-                  <br />
-                  <a href="https://startbootstrap.com/solution/contact-forms"
-                    >https://startbootstrap.com/solution/contact-forms</a
-                  >
+                  <div class="fw-bolder">Thank you for subscribing!</div>
                 </div>
               </div>
-              <div class="d-none" id="submitErrorMessage">
+              <div class="d-none" id="submitErrorMessageMailingList">
                 <div class="text-center text-danger mb-3">
-                  Error sending message!
+                  Error subscribing!
                 </div>
               </div>
               <button
                 class="btn btn-primary btn-xl"
                 id="submitButtonMailingList"
-                type="submit"
               >
                 Send
               </button>

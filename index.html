@@ -451,6 +451,7 @@
                 />
                 <label for="nameContactUs">Full name</label>
                 <div
+                  id="nameErrorContactUs"
                   class="invalid-feedback"
                   data-sb-feedback="nameContactUs:required"
                 >
@@ -467,12 +468,14 @@
                 />
                 <label for="emailContactUs">Email address</label>
                 <div
+                  id="missingEmailErrorContactUs"
                   class="invalid-feedback"
                   data-sb-feedback="emailContactUs:required"
                 >
                   An email is required.
                 </div>
                 <div
+                  id="invalidEmailErrorContactUs"
                   class="invalid-feedback"
                   data-sb-feedback="emailContactUs:email"
                 >
@@ -489,6 +492,7 @@
                 />
                 <label for="phoneContactUs">Phone number</label>
                 <div
+                  id="phoneErrorContactUs"
                   class="invalid-feedback"
                   data-sb-feedback="phoneContactUs:required"
                 >
@@ -506,28 +510,25 @@
                 ></textarea>
                 <label for="messageContactUs">Message</label>
                 <div
+                  id="messageErrorContactUs"
                   class="invalid-feedback"
                   data-sb-feedback="messageContactUs:required"
                 >
                   A message is required.
                 </div>
               </div>
-              <div class="d-none" id="submitSuccessMessage">
+              <div class="d-none" id="submitSuccessMessageContactUs">
                 <div class="text-center mb-3">
                   <div class="fw-bolder">Form submission successful!</div>
                   <br />
                 </div>
               </div>
-              <div class="d-none" id="submitErrorMessage">
+              <div class="d-none" id="submitErrorMessageContactUs">
                 <div class="text-center text-danger mb-3">
                   Error sending message!
                 </div>
               </div>
-              <button
-                class="btn btn-primary btn-xl"
-                id="submitButtonContactUs"
-                type="submit"
-              >
+              <button class="btn btn-primary btn-xl" id="submitButtonContactUs">
                 Send
               </button>
             </form>
