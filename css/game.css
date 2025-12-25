@@ -1,0 +1,12 @@
+#game-container {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  background-color: #f0f0f0;
+  background: url("/assets/gotham.jpg");
+}
+h2 {
+  text-align: center;
+}
